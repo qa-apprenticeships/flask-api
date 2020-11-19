@@ -8,7 +8,7 @@ application.config["DEBUG"] = True
 def answer():
     body = request.get_json(force=True)
     name = body['name']
-    return 'Hiya there, %s!' % name
+    return 'Hello there, %s!' % name
 
 @application.route("/add/<int:num1>/<int:num2>", methods=['GET'])
 def add(num1, num2):
